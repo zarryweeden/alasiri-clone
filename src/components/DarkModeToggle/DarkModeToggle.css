@@ -1,0 +1,31 @@
+.dark-toggle-wrap {
+  position: fixed;
+  top: 25%;
+  right: 16px;
+  z-index: 50;
+}
+
+.dark-toggle-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-md);
+  background-color: #f2f5f5;
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-xl);
+  cursor: pointer;
+  transition: all var(--transition);
+  color: var(--color-text);
+}
+
+.dark-toggle-btn:hover:not(:disabled) {
+  transform: scale(1.05);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.18);
+}
+
+.dark-toggle-btn:disabled {
+  opacity: 0.7;
+  cursor: default;
+}
